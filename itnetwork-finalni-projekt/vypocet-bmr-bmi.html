@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<!--NAVIGAČNÍ LIŠTA-->
+<nav class="navbar navbar-expand-md navbar-light bg-light nav-tabs sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="pic/your-health-promotion-logo.png"  height="32" alt="your-health-promotion-logo" class="d-inline-block align-top">
+        Your Health Promotion
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navigace">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="menu-navigace">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Domov</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#obchod" class="nav-link">Obchod</a>
+          </li>
+          <li class="nav-item">
+            <a href="vypocet-bmr-bmi.html" class="nav-link active">Výpočet BMR a BMI</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-primary btn-md" href="index.html#obchod">Přejít do obchodu</a>
+    </div>
+  </nav> 
+
+    <div class="container">    
+        <div class="row bg-md-secondary p-3">
+            <!-- kALKULÁTOR BMR-->
+            <div id="kalkulator" class="col-md-4 border p-3">   
+                <h4>Bazální metabolismus</h4>
+                
+
+                <div class="form-group">
+                <label for="vaha">Váha:</label>
+                <input type="text" id="vaha" placeholder="váha v kg" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="vyska">Výška:</label>
+                    <input type="text" id="vyska" placeholder="výška v cm" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="vek">Věk:</label>
+                    <input type="text" id="vek" placeholder="věk v letech" class="form-control">
+                </div>
+
+
+                <h4 class="h4">Pohlaví:</h4>
+                <div class="form-check">
+                    <input type="radio" id="muz" name="pohlavi" value="muz" class="form-check-input">
+                    <label for="muz" class="form-check-label">Muž</label>
+
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" id="zena" name="pohlavi" value="zena" class="form-check-input">
+                    <label for="zena" class="form-check-label">Žena</label>
+                </div>
+
+                <button id="spocitatBMR" class="btn btn-primary my-3">Spočítat BMR</button>
+                <h4 id="vysledek" class="text-center border p-2" title="Výsledek tvého bazálního metabolismu" data-toggle="tooltip">ZDE BUDE VÝSLEDEK</h4>
+
+            </div>
+
+
+            <div id="TDEE" class="col-md-8 border p-3">
+                <h4>Celkový denní příjem</h4>
+                <p class="text-muted">Zvolte jednu z možností:</p>
+
+                    <div class="form-check my-2">
+                        <input type="radio" id="12" name="aktivita" value="1.2" class="form-check-input">
+                        <label for="12" class="form-check-label">Sedavé zaměstnání + žádný trénink</label>
+                    </div>
+
+                    <div class="form-check my-2">
+                        <input type="radio" id="14" name="aktivita" value="1.4" class="form-check-input">
+                        <label for="14" class="form-check-label">Sedavé zaměstnání + trénink vyšší intenzity (posilování, funkční trénink, kruhový trénink, běh, plavání apod.) 2x týdně, případně vícekrát týdně o nižší intenzitě (jóga, pilates)</label>
+                    </div>
+
+                    <div class="form-check my-2">
+                        <input type="radio" id="16" name="aktivita" value="1.6" class="form-check-input">
+                        <label for="16" class="form-check-label">Sedavé zaměstnání + trénink vyšší intenzity 3x- 4x týdně; nebo manuální těžké zaměstnání</label>
+                    </div>
+
+                    <div class="form-check my-2">
+                        <input type="radio" id="18" name="aktivita" value="1.8" class="form-check-input">
+                        <label for="18" class="form-check-label">Sedavé zaměstnání + trénink vyšší intenzity 6x týdně a více; nebo manuální těžké zaměstnání + trénink vyšší intenzity 2x týdně</label>
+                    </div>
+
+                    <div class="form-check my-2">
+                        <input type="radio" id="20" name="aktivita" value="2.0" class="form-check-input">
+                        <label for="20" class="form-check-label">Manuální těžké zaměstnání + trénink vyšší intenzity 3x – 4x týdně</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" id="22" name="aktivita" value="2.2" class="form-check-input">
+                        <label for="22" class="form-check-label">Manuální těžké zaměstnání ě trénink vyšší intenzity 6x týdně a více (profesionální sportovci, trenéři a podobně)</label>
+                    </div>
+                    
+                    <button type="button" onclick="displayRadioValue()" id="styleBtn" title="Před stisknutím vyplňte data pro výpočet bazálního metabolismu" class="btn btn-primary my-3" data-toggle="tooltip">Zjistit celkový denní příjem</button>
+                    <h4 id="vysledekAktivita" class="text-center border p-2" title="Výsledek tvého celkového denního příjmu" data-toggle="tooltip">ZDE BUDE VÝSLEDEK</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+      <footer class="bg-primary mt-5 py-5">
+        <div class="container text-light">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="h3">Kontaktní údaje:</h3>
+              <h6 class="h6">Adresa:</h6>
+              <li class="h5 ml-3">Žižkova 218, Praha</li>
+              <h6 class="h6">Telefon:</h6>
+              <li class="h5 ml-3">+420 608 369 864</li>
+              <h6 class="h6">E-mail:</h6>
+              <li class="h5 ml-3">yourhealthpromotion@info.cz</li>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h3">Co děláme?</h3>
+              <p>Naším cílem je zlepšit, či podpořit Váš zdravotní stav ať už z hlediska sportovce, či běžného uživatele. Nabízíme Vám proto širokou škálu suplementů pro sportovce a poskytujeme řadu nezpoplatněných online nástrojů.</p>
+              <a class="btn btn-outline-warning btn-lg" href="index.html#obchod" role="button">Pokračovat do obchodu 🛒</a>
+            </div>
+          </div>
+      </footer>
+      <div class="credits">Copyright © 2023 | YourHealthPromotion</div>
+
+    <script src="js.js"></script>
+    <script src="pridat_do_kosiku.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+    <!--SKRIPT AKTIVUJE TOOLTIP-->
+    <script>
+        $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

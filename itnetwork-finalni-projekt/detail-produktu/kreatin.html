@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<!--NAVIGAČNÍ LIŠTA-->
+<nav class="navbar navbar-expand-md navbar-light bg-light nav-tabs sticky-top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../pic/your-health-promotion-logo.png"  height="32" alt="your-health-promotion-logo" class="d-inline-block align-top">
+        Your Health Promotion
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navigace">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="menu-navigace">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Domov</a>
+            </li>
+            <li class="nav-item">
+              <a href="../index.html#obchod" class="nav-link">Obchod</a>
+            </li>
+            <li class="nav-item">
+              <a href="../vypocet-bmr-bmi.html" class="nav-link">Výpočet BMR a BMI</a>
+            </li>
+          </ul>
+      </div>
+      <a class="btn btn-primary btn-md" href="../index.html#obchod">Přejít do obchodu</a>
+    </div>
+  </nav> 
+
+
+
+    <!--DETAIL PRODUKTU-->
+    <div class="container">
+        <div class="jumbotron bg-white">
+            <p class="text-muted">Výrobce: GymBeam</p>
+            <h1 class="display-3">Kreatin - Crea7in</h1>
+            <p class="lead">detail produktu</p>
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <!--ZAČÁTEK CAROUSELU - SLIDER IMGS PRODUKTU-->
+                    <div id="img-carousel-slider" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#img-carousel-slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#img-carousel-slider" data-slide-to="1"></li>
+                            <li data-target="#img-carousel-slider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 product-img" src="../pic/produkty/kreatin/kreatin-1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 product-img" src="../pic/produkty/kreatin/kreatin-2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 product-img" src="../pic/produkty/kreatin/kreatin-3.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#img-carousel-slider" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Předchozí</span>
+                        </a>
+                        <a class="carousel-control-next" href="#img-carousel-slider" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Další</span>
+                        </a>
+                    </div>
+                    <!--KONEC SLIDERU PRODUKTU-->
+                </div>
+                <div class="col-md-7">
+                    <h4 class="h4 font-weight-bolder">Kreatin - Crea7in</h4>
+                    <p>Kreatin Crea7in je komplexní směs, která sestává ze 7 druhů kreatinu pro funkční účinek. Samotný kreatin totiž zvyšuje fyzickou výkonnost během krátkodobých po sobě následujících intervalech intenzivního tréninku. Složení pro maximální komplexnost doplňuje také l-citrulin. Tuto směs tak ocení siloví sportovci, příznivci crossfitu či HIIT tréninků.</p>
+                    <span class="badge badge-dark rounded-0 p-1">SKLADEM</span>
+                    <span class="badge badge-danger rounded-0 p-1">SLEVA 6%</span>
+                    <p class="lead mt-2">
+                        <a class="btn btn-primary btn-lg text-white" role="button" id="pridat-do-kosiku-btn">Zakoupit nyní 🛒</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-2">
+            <table class="table table-striped table-hover">
+                <thead class="bg-secondary text-light">
+                    <th>Nutriční hodnoty</th>
+                    <th>100 g</th>
+                </thead>
+                <tr>
+                    <td>Energetická hodnota</td>
+                    <td>97 kJ / 23 kcal</td>
+                </tr>
+                <tr>
+                    <td>Tuky</td>
+                    <td>0 g</td>
+                </tr>
+                <tr>
+                    <td>Sacharidy</td>
+                    <td>4 g</td>
+                </tr>
+                <tr>
+                    <td>Bílkoviny</td>
+                    <td>0.06 g</td>
+                </tr>
+                <tr>
+                    <td>Sůl</td>
+                    <td>0.001 g</td>
+                </tr>
+                <tr>
+                    <td>Mikronizovaný kreatin monohydrát</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <td>Pufrovaný kreatin monohydrát</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <td>Kreatin fosfát</td>
+                    <td>1000 mg</td>
+                </tr>
+                <tr>
+                    <td>Kreatin citrát</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <td>Kreatin pyruvát</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <td>Kreatin hydrochlorid</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <td>Tri-kreatin malát</td>
+                    <td>300 mg</td>
+                </tr>
+                <tr>
+                    <td>Alfa-ketoglutarát vápenatý</td>
+                    <td>100 mg</td>
+                </tr>
+                <tr>
+                    <td>Dextróza</td>
+                    <td>1.6 g</td>
+                </tr>
+                <tr>
+                    <td>Maltodextrin</td>
+                    <td>1.6 g</td>
+                </tr>
+                <tr>
+                    <td>Fruktóza</td>
+                    <td>0.4 g</td>
+                </tr>
+                <tr>
+                    <td>Waxy maizetm (modifikovaný škrob)</td>
+                    <td>0.4 g</td>
+                </tr>
+                <tr>
+                    <td>Sibiřský ženšen (Eleutherococcus Senticosus) prášek z kořene</td>
+                    <td>100 mg</td>
+                </tr>
+                <tr>
+                    <td>L-citrulín DL-malát (1:1)</td>
+                    <td>100 mg</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <table class="table table-hover" id="kosik-tabulka"></table>
+
+    <!-- Footer -->
+        <footer class="bg-primary mt-5 py-5">
+            <div class="container text-light">
+            <div class="row">
+                <div class="col-md-6">
+                <h3 class="h3">Kontaktní údaje:</h3>
+                <h6 class="h6">Adresa:</h6>
+                <li class="h5 ml-3">Žižkova 218, Praha</li>
+                <h6 class="h6">Telefon:</h6>
+                <li class="h5 ml-3">+420 608 369 864</li>
+                <h6 class="h6">E-mail:</h6>
+                <li class="h5 ml-3">yourhealthpromotion@info.cz</li>
+                </div>
+                <div class="col-md-6">
+                <h3 class="h3">Co děláme?</h3>
+                <p>Naším cílem je zlepšit, či podpořit Váš zdravotní stav ať už z hlediska sportovce, či běžného uživatele. Nabízíme Vám proto širokou škálu suplementů pro sportovce a poskytujeme řadu nezpoplatněných online nástrojů.</p>
+                <a class="btn btn-outline-warning btn-lg" href="../index.html#obchod" role="button">Pokračovat do obchodu 🛒</a>
+                </div>
+            </div>
+        </footer>
+        <div class="credits">Copyright © 2023 | YourHealthPromotion</div>
+
+    <script src="../pridat_do_kosiku.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+    <!--SKRIPT AKTIVUJE TOOLTIP-->
+    <script>
+        $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

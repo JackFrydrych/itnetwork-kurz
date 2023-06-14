@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>BOOTSTRAP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  
+<!--NAVIGAČNÍ LIŠTA-->
+<nav class="navbar navbar-expand-md navbar-light bg-light nav-tabs sticky-top">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <img src="pic/your-health-promotion-logo.png"  height="32" alt="your-health-promotion-logo" class="d-inline-block align-top">
+      Your Health Promotion
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navigace">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu-navigace">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Domov</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#obchod" class="nav-link">Obchod</a>
+        </li>
+        <li class="nav-item">
+          <a href="vypocet-bmr-bmi.html" class="nav-link">Výpočet BMR a BMI</a>
+        </li>
+      </ul>
+    </div>
+    <!--NÁKUPNÍ KOŠÍK-->
+      <div class="dropdown">
+        <button href="vypocet-bmr-bmi.html" class="nav-link dropdown-toggle btn btn-primary text-white" data-toggle="dropdown">Nákupní košík</button>
+        <div class="dropdown-menu" id="myDropdown">
+          <table class="table table-hover" id="kosik-tabulka"></table>
+        </div>
+      </div>
+  </div>
+</nav>
+
+<!--ÚVODNÍ OBRAZOVKA(JUMBOTRON)-->
+
+<div class="jumbotron jumbotron-fluid text-white">
+  <div class="container">
+    <h1 class="display-3">S Vaším zdravím Vám pomůžeme</h1>
+    <p class="lead">Vaše zdraví, naše starosti</p>
+    <hr class="my-2">
+    <p>Naším cílem je zlepšit, či podpořit Váš zdravotní stav ať už z hlediska sportovce, či běžného uživatele. Nabízíme Vám proto širokou škálu suplementů pro sportovce a poskytujeme řadu nezpoplatněných online nástrojů.</p>
+    <p class="lead">
+      <a class="btn btn-outline-warning btn-lg" href="index.html#obchod" role="button">Pokračovat do obchodu 🛒</a>
+    </p>
+  </div>
+</div>
+
+<!--OBCHOD POMOCÍ GRID SYSTÉMU-->
+<div class="container" id="obchod">
+  <div class="row">
+    <div class="col-md-4">
+
+
+      <div class="card card-custom">
+        <a href="detail-produktu/arasidove-maslo.html">
+          <img class="card-img-top" src="pic/produkty/arasidove-maslo.jpg" alt="produkt-arasidove-maslo">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Arašídové máslo <span class="badge badge-danger badge-pill">15% OFF</span></h4>
+          <p class="card-text">Arašídové máslo 100% je lahodné přírodní máslo tvořené pouze praženými arašídy. Vyniká svou skvělou chutí a krémovou konzistencí...</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <div class="cena-produktu">359Kč</div>
+          <button class="btn btn-primary" id="pridat-do-kosiku-arasidove-maslo">Přidat do košíku 🛒</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="card card-custom">
+        <a href="detail-produktu/kreatin.html">
+          <img class="card-img-top" src="pic/produkty/kreatin-crea7in.jpg" alt="produkt-kreatin">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Kreatin - Crea7in</h4>
+          <p class="card-text">Kreatin Crea7in je komplexní směs, která sestává ze 7 druhů kreatinu pro funkční účinek. Samotný kreatin totiž zvyšuje fyzickou výkonnost...</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <div class="cena-produktu">289Kč</div>
+          <button class="btn btn-primary" id="pridat-do-kosiku-kreatin">Přidat do košíku 🛒</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-custom">
+        <a href="detail-produktu/protein.html">
+          <img class="card-img-top" src="pic/produkty/protein-just-whey.jpg" alt="produkt-protein-just-whey">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Protein Just Whey</h4>
+          <p class="card-text">Arašídové máslo 100% je lahodné přírodní máslo tvořené pouze praženými arašídy. Vyniká svou skvělou chutí a krémovou konzistencí...</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <div class="cena-produktu">150Kč</div>
+          <button class="btn btn-primary" id="pridat-do-kosiku-protein">Přidat do košíku 🛒</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-custom mt-4">
+        <a href="detail-produktu/multivitamin.html">
+          <img class="card-img-top" src="pic/produkty/multivitamin-60-tab.jpg" alt="produkt-multivitamin">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Multivitamín Vitality Complex</h4>
+          <p class="card-text">Multivitamín Vitality Complex je funkční doplněk pro každodenní péči o zdraví a vitalitu. ...</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <div class="cena-produktu">189Kč</div>
+          <button class="btn btn-primary" id="pridat-do-kosiku-multivitamin">Přidat do košíku 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--KONTAKTUJTE NÁS--> <br> <br>
+
+<div class="container">
+  <h2 class="h2">Kontaktní formulář</h2>
+  <form>
+    <div class="row bg-warning m-0 py-3">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="kontaktujte-nas-jmeno">Jméno: </label>
+          <input type="text" class="form-control mb-3" id="kontaktujte-nas-jmeno" placeholder="Petr">
+        <div class="form-group">
+          <label for="kontaktujte-nas-prijmeni">Příjmení: </label>
+          <input type="text" class="form-control" id="kontaktujte-nas-prijmeni" placeholder="Němec">
+        </div>
+        </div>  
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+          <label for="kontaktujte-nas-zprava">Zpráva: </label>
+          <textarea type="text" class="form-control" id="kontaktujte-nas-zprava" placeholder="Napište zprávu..." style="height: 125px"></textarea>
+        </div>
+      </div>
+      <span class="col-md-12 text-center">
+        <input type="button" class="btn btn-primary"  value="Odeslat">
+      </span>
+    </div>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary mt-5 py-5">
+  <div class="container text-light">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="h3">Kontaktní údaje:</h3>
+        <h6 class="h6">Adresa:</h6>
+        <li class="h5 ml-3">Žižkova 218, Praha</li>
+        <h6 class="h6">Telefon:</h6>
+        <li class="h5 ml-3">+420 608 369 864</li>
+        <h6 class="h6">E-mail:</h6>
+        <li class="h5 ml-3">yourhealthpromotion@info.cz</li>
+      </div>
+      <div class="col-md-6">
+        <h3 class="h3">Co děláme?</h3>
+        <p>Naším cílem je zlepšit, či podpořit Váš zdravotní stav ať už z hlediska sportovce, či běžného uživatele. Nabízíme Vám proto širokou škálu suplementů pro sportovce a poskytujeme řadu nezpoplatněných online nástrojů.</p>
+        <a class="btn btn-outline-warning btn-lg" href="index.html#obchod" role="button">Pokračovat do obchodu 🛒</a>
+      </div>
+    </div>
+</footer>
+<div class="credits">Copyright © 2023 | YourHealthPromotion</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js.js"></script>
+    <script src="pridat_do_kosiku.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

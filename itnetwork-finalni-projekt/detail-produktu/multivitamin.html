@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<!--NAVIGAČNÍ LIŠTA-->
+<nav class="navbar navbar-expand-md navbar-light bg-light nav-tabs sticky-top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <img src="../pic/your-health-promotion-logo.png"  height="32" alt="your-health-promotion-logo" class="d-inline-block align-top">
+        Your Health Promotion
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navigace">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="menu-navigace">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Domov</a>
+            </li>
+            <li class="nav-item">
+              <a href="../index.html#obchod" class="nav-link">Obchod</a>
+            </li>
+            <li class="nav-item">
+              <a href="../vypocet-bmr-bmi.html" class="nav-link">Výpočet BMR a BMI</a>
+            </li>
+          </ul>
+      </div>
+      <a class="btn btn-primary btn-md" href="../index.html#obchod">Přejít do obchodu</a>
+    </div>
+  </nav> 
+
+
+
+    <!--DETAIL PRODUKTU-->
+    <div class="container">
+        <div class="jumbotron bg-white">
+            <p class="text-muted">Výrobce: GymBeam</p>
+            <h1 class="display-3">Multivitamín - Vitality Complex</h1>
+            <p class="lead">detail produktu</p>
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <!--ZAČÁTEK CAROUSELU - SLIDER IMGS PRODUKTU-->
+                    <div id="img-carousel-slider" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#img-carousel-slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#img-carousel-slider" data-slide-to="1"></li>
+                            <li data-target="#img-carousel-slider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 product-img" src="../pic/produkty/multivitamin/multivitamin-1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 product-img" src="../pic/produkty/multivitamin/multivitamin-2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 product-img" src="../pic/produkty/multivitamin/multivitamin-3.jpg">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#img-carousel-slider" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Předchozí</span>
+                        </a>
+                        <a class="carousel-control-next" href="#img-carousel-slider" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Další</span>
+                        </a>
+                    </div>
+                    <!--KONEC SLIDERU PRODUKTU-->
+                </div>
+                <div class="col-md-7">
+                    <h4 class="h4 font-weight-bolder">Multivitamín Vitality Complex</h4>
+                    <p>Multivitamín Vitality Complex je funkční doplněk pro každodenní péči o zdraví a vitalitu. Obsahuje celkem 24 pečlivě vybraných aktivních složek včetně 10 vitamínů, 5 minerálních látek a trávicích enzymů. Pomůže tak s příjmem základních mikroživin, které se podílejí na esenciálních procesech v organismu, jako je regenerace, trávení, činnost imunity či nervového systému. </p>
+                    <span class="badge badge-dark rounded-0 p-1">SKLADEM</span>
+                    <span class="badge badge-danger rounded-0 p-1">SLEVA 12%</span>
+                    <p class="lead mt-2">
+                        <a class="btn btn-primary btn-lg text-white" role="button" id="pridat-do-kosiku-btn">Zakoupit nyní 🛒</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-2">
+            <table class="table table-striped table-hover">
+                <thead class="bg-secondary text-light">
+                    <th>Nutriční hodnoty</th>
+                    <th>100 g</th>
+                </thead>
+                <tr>
+                    <td>Vitamín C</td>
+                    <td>500 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín E</td>
+                    <td>24 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B1</td>
+                    <td>2.2 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B2</td>
+                    <td>2.8 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B3</td>
+                    <td>32 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B5</td>
+                    <td>12 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B6</td>
+                    <td>2.8 mg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B7</td>
+                    <td>100 µg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B9</td>
+                    <td>400 µg</td>
+                </tr>
+                <tr>
+                    <td>Vitamín B12</td>
+                    <td>5 µg</td>
+                </tr>
+                <tr>
+                    <td>Hořčík</td>
+                    <td>120 mg</td>
+                </tr>
+                <tr>
+                    <td>Zinek</td>
+                    <td>20 mg</td>
+                </tr>
+                <tr>
+                    <td>Železo</td>
+                    <td>7 mg</td>
+                </tr>
+                <tr>
+                    <td>Chrom</td>
+                    <td>200 µg</td>
+                </tr>
+                <tr>
+                    <td>Selen</td>
+                    <td>110 µg</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <table class="table table-hover" id="kosik-tabulka"></table>
+
+    <!-- Footer -->
+        <footer class="bg-primary mt-5 py-5">
+            <div class="container text-light">
+            <div class="row">
+                <div class="col-md-6">
+                <h3 class="h3">Kontaktní údaje:</h3>
+                <h6 class="h6">Adresa:</h6>
+                <li class="h5 ml-3">Žižkova 218, Praha</li>
+                <h6 class="h6">Telefon:</h6>
+                <li class="h5 ml-3">+420 608 369 864</li>
+                <h6 class="h6">E-mail:</h6>
+                <li class="h5 ml-3">yourhealthpromotion@info.cz</li>
+                </div>
+                <div class="col-md-6">
+                <h3 class="h3">Co děláme?</h3>
+                <p>Naším cílem je zlepšit, či podpořit Váš zdravotní stav ať už z hlediska sportovce, či běžného uživatele. Nabízíme Vám proto širokou škálu suplementů pro sportovce a poskytujeme řadu nezpoplatněných online nástrojů.</p>
+                <a class="btn btn-outline-warning btn-lg" href="../index.html#obchod" role="button">Pokračovat do obchodu 🛒</a>
+                </div>
+            </div>
+        </footer>
+        <div class="credits">Copyright © 2023 | YourHealthPromotion</div>
+
+    <script src="../pridat_do_kosiku.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+    <!--SKRIPT AKTIVUJE TOOLTIP-->
+    <script>
+        $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
