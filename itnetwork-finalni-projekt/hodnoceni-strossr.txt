@@ -1,0 +1,15 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Některé názvy by však mohly být více deskriptivní, například aktivita12, aktivita14 atd., kde není z názvu jasné, co tyto hodnoty reprezentují.
+2. Dodržení principů SRP a SoC - Kód kombinuje logiku spočítání BMR a TDEE, správu uživatelského rozhraní a správu nákupního košíku, což je pro jednu skriptovou část příliš mnoho různých zodpovědností. 
+3. Vhodný výběr datových typů - Ok.
+4. Formátování kódu - Ok.
+5. Duplicitní kód a nekonečné cykly - Existují určité opakující se kousky kódu, např. výpočet BMR pro muže a ženy se opakuje ve funkcích BMRMuz, BMRZena a v displayRadioValue.
+6. Validace vstupních dat - Validace vstupů (například kontrola správnosti věku) chybí. Lze tedy zadat např. Záporné číslo. Toto by mělo být přidáno, aby se předešlo neočekávaným chybám nebo nesprávným výpočtům.
+7. Logičnost a složitost - Uživatele by bylo dobré informovat, že se zboží úspěšně přidalo do nákupního košíku. Tlačítko Pokračovat do obchodu (2x) bych odebral, když je v navigaci nahoře.
+8. Komentáře - Komentáře jsou použity, ale mohly by být více informativní a pokrývat více částí kódu, zejména u složitějších částí nebo tam, kde není funkce kódu okamžitě zřejmá.
+9. Celkové hodnocení - Kód je celkově dobře strukturovaný a snadno pochopitelný, s několika oblastmi pro zlepšení, zejména v oblasti pojmenování, redundance a validace dat. Pro junior programátora je to dobrý výkon, ale doporučil bych zaměřit se na vylepšení struktury kódu a přidání chybějících prvků, jako je validace dat a lepší oddělení zodpovědností.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
+
+hodnoceni-strossr.txt
